@@ -1,3 +1,30 @@
 .hidden {
   display: none;
 }
+body{
+  /*background-color: yellowgreen;*/
+  width: 390px;
+  margin: 0px 75px;
+}
+
+.headerBox{
+  background-color: #D9D9D9;
+}
+.menu{
+  /*float:right;*/
+  margin-left: 21em;
+}
+.overlay{
+  z-index: 1;
+}  /*for overlaid text*/
+
+.videoContainer {
+  z-index: 0;
+}
+
+.greyContainer{
+  background-color: #D9D9D9;
+  padding: 1em;
+}
+
+/*add styling to buttons*/

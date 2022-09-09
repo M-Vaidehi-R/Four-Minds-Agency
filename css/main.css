@@ -5,6 +5,7 @@ body{
   /*background-color: yellowgreen;*/
   width: 390px;
   margin: 0px 75px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .headerBox{
@@ -16,7 +17,7 @@ body{
 }
 .overlay{
   z-index: 1;
-}  /*for overlaid text*/
+}  /*for overlaid text on video*/
 
 .videoContainer {
   z-index: 0;
@@ -27,4 +28,108 @@ body{
   padding: 1em;
 }
 
+.allignment {
+ display: flex;
+ flex-direction: column;
+ /*margin-left: 4em;*/
+ align-items: center;
+}
+button {
+  width:10em;
+  height: 2.5em;
+  border-radius: 2em;
+  margin: 1em;
+}
+
+p{
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+footer{
+  margin-top: 2em;
+}
+
+h3{
+  font-size: 25px;
+}
+
 /*add styling to buttons*/
+
+
+/*for tablet*/
+
+@media screen and (min-width:770px){
+
+  body{
+    width: 770px;
+    margin: 0px 75px;
+  }
+
+  .menu{
+    /*float:right;*/
+   margin-left: 45em;
+  }
+
+
+
+  p{
+    font-size: 20px;
+    padding: .5em;
+  }
+
+  .two-items{
+    display: flex;
+    flex-direction: row;
+    
+    
+  }
+
+  button {
+    width:12em;
+    height: 3em;
+    border-radius: 2em;
+    margin: 1em;
+  }
+}
+
+@media screen and (min-width:1800px) {
+
+  body{
+    width: 1800px;
+    margin: 0px 75px;
+  }
+
+  .menu{
+   margin-left: 105em;
+  }
+
+  p{
+    font-size: 24px;
+    padding: .5em;
+  }
+
+  .wrap-flex{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  footer{
+    margin-left: 16em;
+  }
+
+  form {
+    width: 8em;
+  }
+
+  button {
+    width:15em;
+    height: 4em;
+    border-radius: 2em;
+    margin: 1em;
+  }
+}

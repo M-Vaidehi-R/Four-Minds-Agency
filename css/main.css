@@ -11,6 +11,10 @@ body{
 .headerBox{
   background-color: #D9D9D9;
 }
+
+.logo {
+  margin-right: auto;
+}
 .menu{
   /*float:right;*/
   margin-left: 21em;

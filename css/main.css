@@ -3,7 +3,6 @@
 }
 body{
   /*background-color: yellowgreen;*/
-  width: 390px;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
 }
@@ -31,7 +30,9 @@ body{
   background-color: #D9D9D9;
   padding: 1em;
 }
-
+.sections{
+  margin: 80px;
+}
 .allignment {
  display: flex;
  flex-direction: column;
@@ -73,10 +74,6 @@ h3{
 
 @media screen and (min-width:770px){
 
-  body{
-    width: 770px;
-
-  }
 
 
 
@@ -103,19 +100,24 @@ h3{
 
 @media screen and (min-width:1800px) {
 
-  body{
+  body {
     width: 1800px;
 
   }
 
 
-
-  p{
+  p {
     font-size: 24px;
     padding: .5em;
   }
 
+  .
+
+
+
   .wrap-flex{
+
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     

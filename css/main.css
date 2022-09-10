@@ -14,10 +14,10 @@ body{
 
 .logo {
   margin-right: auto;
+  display:inline-block;
 }
 .menu{
-  /*float:right;*/
-  margin-left: 21em;
+ float:right;
 }
 .overlay{
   z-index: 1;
@@ -78,10 +78,6 @@ h3{
 
   }
 
-  .menu{
-    /*float:right;*/
-   margin-left: 45em;
-  }
 
 
 
@@ -112,9 +108,7 @@ h3{
 
   }
 
-  .menu{
-   margin-left: 105em;
-  }
+
 
   p{
     font-size: 24px;

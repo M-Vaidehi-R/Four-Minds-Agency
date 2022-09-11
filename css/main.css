@@ -4,21 +4,50 @@
 body{
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
+/* GENERAL HERO */
+.hero{
+  line-height: 1.8;
+  text-align: center;
+  position: relative;
+}
+.hero-overlay{
+  position: absolute;
+  margin-top: 10%;
+  font-size: 2em;
+  background: rgba(255,255,255,.3);
+  padding: 50px;
+}
+.hero-title{
+  font-size: 60px;
+}
+.hero-sub-title{
+  font-size: 25px;
+  color: #2B4772;
+}
+
+.sub-title{
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .headerBox{
   background-color: #D9D9D9;
+  margin-top: 1em;
 }
 
 .logo {
   margin-right: auto;
   display:inline-block;
   padding: 1em;
-  margin-top: 1em;
+  flex-basis: 500px;
 }
 .menu{
  float:right;
@@ -55,6 +84,12 @@ a {
   background-color: #f7BD48;
 }
 
+.yellowBckgrd {
+  width: 1920px;
+  height: 500px;
+  background-color: #f7BD48;
+}
+
 .memberOne {
   margin-top: 4em;
   margin-left: 7em;
@@ -65,9 +100,9 @@ a {
   margin-top: 2em;
 }
 
-/* .sections{
-  /* margin: 80px;
-} */
+.space-evenly {
+  justify-content: space-evenly;
+}
 
 .allignment {
  display: flex;
@@ -152,7 +187,7 @@ h2 {
 
 
 footer{
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 h3{
@@ -172,6 +207,11 @@ h3{
   margin-right: 1em;
 }
 
+/* PROJECTS PAGE */
+.projects-container{
+  margin: 30px 0;
+}
+
 
 /*mobile --> */
 @media screen and (max-width:768px){
@@ -187,17 +227,19 @@ nav {
 
 .nav-links {
   display: relative;
-  right: 0px;
+  margin-right: -20px;
   height: 15em;
   margin-top:10em;
   background-color: #2B4772;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  width:50%;
+  justify-content: space-evenly;
   transform: translateX(120%);
   transition: transform 0.1s ease-in ;
+  padding: 0 2em;
+  z-index: 999;
+  width: 100%;
 }
 
 .nav-links a{
@@ -210,6 +252,7 @@ nav {
 
 .nav-links li {
   opacity: 1;
+  text-align: center;
 }
 .burger{
   display: block;
@@ -221,8 +264,8 @@ nav {
 }
 
 .nav-links a:hover{
-  text-decoration: underline;
-}
+    text-decoration: underline;
+  }
 }
 
 .mapouter {
@@ -397,6 +440,7 @@ nav{
   
   body {
     width: 1800px;
+    overflow-x: hidden;
   }
 
   p {
@@ -404,7 +448,7 @@ nav{
     padding: .5em;
   }
 
-.wrap-flex{
+  .wrap-flex{
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -433,13 +477,13 @@ nav{
     width: 15em;
     height: 2em;
     margin-top: 1em;
-}
-.about-title {
-  position: absolute;
-  color: rgb(43, 72, 115);
-  padding-top: 15%;
-  font-size: 2em;
-}
+  }
+  .about-title {
+    position: absolute;
+    color: rgb(43, 72, 115);
+    padding-top: 15%;
+    font-size: 2em;
+  }
 
 .about-text {
   position: absolute;
@@ -467,9 +511,16 @@ nav {
 
 .nav-links {
   display: flex;
-  width: 80%;
   justify-content: space-around;
-
+  flex-direction: row;
+  background: white;
+  height: fit-content;
+  margin-top: 20px;
+  right: 0;
+  width: auto;
+  transition: none;
+  transform: none;
+  flex: 2;
 }
 
 .nav-links li {

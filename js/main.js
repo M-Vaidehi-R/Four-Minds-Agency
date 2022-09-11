@@ -47,7 +47,7 @@ let dianneTextCon = document.querySelector(".dianneText p"),
 
     const dianneBio = [`I enjoy creating graphics, assets and design while also working on how it can be applied on web developement. This allows me to work on design and understand the technical feasibility and possible improvement of my designs.`]; 
       
-    const mamathaBio = [`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a excepturi tempore soluta fuga possimus? Cum consequuntur id modi provident porro excepturi alias, possimus esse dolorum tempore dicta vel deleniti!`];
+    const mamathaBio = [`A growing web developer who deeply care about your company as you do, stands with you for creating the website you dreamt of. Now a current student of Interactive Media Design at Fanshawe College, for broadning my skills and knowledge.`];
 
     const mariiaBio = [`A creative and customer-oriented designer with an eye for commercial fashion and detail in product styling. Constantly evolving and growing. From the beginning of my career, I started working as a freelancer with a range of different clients who allowed me to learn in many different fields, thus broadening my skills.`];
 

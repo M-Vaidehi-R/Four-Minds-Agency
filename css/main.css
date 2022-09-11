@@ -2,9 +2,12 @@
   display: none;
 }
 body{
-  /*background-color: yellowgreen;*/
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .headerBox{
@@ -14,36 +17,127 @@ body{
 .logo {
   margin-right: auto;
   display:inline-block;
+  padding: 1em;
+  margin-top: 1em;
 }
 .menu{
  float:right;
 }
 .overlay{
   z-index: 1;
+  color: #2B4772;
+  font-size: 2em;
+  margin-top: 4em;
 }  /*for overlaid text on video*/
 
-.videoContainer {
-  z-index: 0;
+.blueContainer{
+  background-color: #2B4772;
+  padding: 1em;
+  padding-left: 14%;
 }
 
-.greyContainer{
-  background-color: #D9D9D9;
+.blueContainer img {
+  /* margin-left: 1em; */
+  margin-left: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.yellowContainer{
+  background-color: #f7BD48;
   padding: 1em;
+  height: 400px;
 }
-.sections{
-  margin: 80px;
+
+.yellowBckgrd {
+  width: 1920px;
+  height: 500px;
+  background-color: #f7BD48;
 }
+
+.memberOne {
+  margin-top: 4em;
+  margin-left: 7em;
+}
+
+.memberOne h3 {
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+/* .sections{
+  /* margin: 80px;
+} */
+
 .allignment {
  display: flex;
  flex-direction: column;
  /*margin-left: 4em;*/
  align-items: center;
 }
+
+.about-title {
+  position: absolute;
+  color: rgb(43, 72, 115);
+  padding-top: 60%;
+  font-size: 2em;
+}
+
+.about-text {
+  position: absolute;
+  color: #2B4772;
+  margin-top: 75%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.projects-text {
+  position: absolute;
+  color: #2B4772;
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 4em;
+  line-height: 1.3em;
+}
+
 button {
-  width:10em;
+  width:15em;
   height: 2.5em;
-  border-radius: 2em;
-  margin: 1em;
+  background-color: #2B4772;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f7BD48;
+}
+
+.btnProjects {
+  width:15em;
+  height: 4em;
+  margin-top: 15em;
+  background-color: #2B4772;
+  color: #f7BD48;
+}
+
+.btnProjects:hover {
+  background-color: #f7BD48;
+  color: #2B4772;
+}
+
+.btnTeam {
+  width:15em;
+  height: 4em;
+  margin-top: 1em;
+  background-color: #f7BD48;
+  color: #2B4772;
+}
+
+.btnTeam:hover {
+  background-color: #2B4772;
+  color: #f7BD48;
 }
 
 p{
@@ -53,7 +147,10 @@ p{
 h2 {
   font-size: 24px;
   font-weight: bold;
+  color: #2B4772;
 }
+
+
 footer{
   margin-top: 2em;
 }
@@ -63,20 +160,18 @@ h3{
 }
 
 .contact{
-   display: flex;
-   flex-direction: column;
-   align-items:center;
-   justify-content: center;
-   margin-top: 2em;
+  text-align: left;
 }
 
 .burger div{
-  width:30px;
+  width:40px;
   height: 5px;
-  background-color: rgb(43, 19, 176);
+  background-color: #2B4772;
   margin:8px;
   border-radius: 5px;
+  margin-right: 1em;
 }
+
 
 /*mobile --> */
 @media screen and (max-width:768px){
@@ -95,7 +190,7 @@ nav {
   right: 0px;
   height: 15em;
   margin-top:10em;
-  background-color: #F7BD48;
+  background-color: #2B4772;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,15 +201,15 @@ nav {
 }
 
 .nav-links a{
-  color: rgb(46, 16, 179);
+  color: #f7BD48;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .nav-links li {
-  opacity: 0;
+  opacity: 1;
 }
 .burger{
   display: block;
@@ -128,16 +223,82 @@ nav {
 .nav-links a:hover{
   text-decoration: underline;
 }
-
 }
+
+.mapouter {
+  margin-left: 10%;
+}
+
+.contactUs {
+  margin-left: 2em;
+  color: #2B4772;
+  margin-top: 2em;
+}
+
+.contactUs p {
+  margin-top: 1em;
+}
+
+.two-items {
+  margin-top: 3em;
+}
+
+/* --- Video starts --- */
+
+video {
+  width: 80%;
+  margin: 5%;
+  margin-left: 10%;
+  border: thin solid #e1e1e1;
+}
+
+#overlay-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99900;
+  display: none;
+}
+
+#overlay-close-btn {
+  position: absolute;
+  color: #f7BD48;
+  right: 3em;
+  padding: 30px 10px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  cursor: pointer;    
+}
+
+.video-btn {
+  width:15em;
+  height: 2em;
+  margin-bottom: 10em;
+  margin-top: 2em;
+  background-color: #f7BD48;
+  color: #fff;
+  display: block;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 1em;
+}
+.video-btn:hover {
+  background-color: #2B4772;
+}
+
+/* --- Video ends --- */
 
 /*add styling to buttons*/
 
 
 /*for tablet*/
 
-@media screen and (max-width: 1800px){
-
+@media screen and (min-width:770px){
   p{
     font-size: 20px;
     padding: .5em;
@@ -147,15 +308,40 @@ nav {
     display: flex;
     flex-direction: row;
   }
-
+  
   button {
-    width:12em;
+    width: 15em;  
     height: 3em;
-    border-radius: 2em;
-    margin: 1em;
   }
 
- nav{
+  .btnProjects {
+    width:15em;
+    height: 4em;
+    margin-top: 19em;
+  }
+
+.video-btn{
+  width: 15em;
+  height: 2em;
+}
+
+.about-title {
+  position: absolute;
+  color: rgb(43, 72, 115);
+  padding-top: 20%;
+  font-size: 2em;
+}
+
+.about-text {
+  position: absolute;
+  color: #2B4772;
+  margin-top: 25%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* -- Nav Tablet Starts -- */
+nav{
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -169,7 +355,7 @@ nav {
   right: 0px;
   height: 15em;
   margin-top:10em;
-  background-color: #000000;
+  background-color: #2B4772;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,29 +389,25 @@ nav {
   transition: .5s ease-in;
 }
 
+/* -- Nav Tablet Ends -- */
+
 }
 
 @media screen and (min-width:1800px) {
-
+  
   body {
     width: 1800px;
-
   }
-
 
   p {
     font-size: 24px;
     padding: .5em;
   }
 
-
-
-  .wrap-flex{
-
+.wrap-flex{
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    
   }
 
   footer{
@@ -239,56 +421,89 @@ nav {
   button {
     width:15em;
     height: 4em;
-    border-radius: 2em;
-    margin: 1em;
   }
 
-  nav {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #FFF;
-    font-family: 'Montserrat', sans-serif;
+  .btnProjects {
+    width:15em;
+    height: 4em;
+    margin-top: 19em;
+  }
+
+  .video-btn{
+    width: 15em;
+    height: 2em;
+    margin-top: 1em;
+}
+.about-title {
+  position: absolute;
+  color: rgb(43, 72, 115);
+  padding-top: 15%;
+  font-size: 2em;
 }
 
-  .nav-links {
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
+.about-text {
+  position: absolute;
+  color: #2B4772;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.blueContainer{
+  background-color: #2B4772;
+  padding: 1em;
+}
+
+/*- Nav Desktop Starts -*/
+
+nav {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
 
 }
 
 .nav-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links a{
-  color: rgb(46, 16, 179);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 18px;
+color: #2B4772;
+text-decoration: none;
+letter-spacing: 3px;
+font-weight: bold;
+font-size: 18px;
 }
 
 
 .nav-links a:hover {
-  background-color: #F7BD48;
-  padding: 6px;
-  border-radius: 4px;
-  opacity: 80%;
-  transition: 0.5s ease;
+background-color: #F7BD48;
+padding: 6px;
+border-radius: 4px;
+opacity: 80%;
+transition: 0.5s ease;
 }
 
 .active{
-  background-color: #F7BD48;
-  padding: 6px;
-  border-radius: 4px;
+background-color: #F7BD48;
+padding: 6px;
+border-radius: 4px;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
+
+/*- Nav Desktop Ends -*/
 
 }

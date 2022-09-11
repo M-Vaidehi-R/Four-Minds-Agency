@@ -13,6 +13,7 @@
 <body>
   <header>
     <section class="headerBox">
+        <h2 class="hidden">Navigation</h2>
        <!--logo-->
        <nav>
             <div class="logo">
@@ -22,7 +23,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="our_projects.html">Projects</a></li>
                 <li><a href="new_projects.html">New Projects</a></li>
                 <li><a href="contact_us.html" class="active">Contact Us</a> </li>
             </ul>
@@ -52,7 +53,7 @@
     <section class="contact allignment flex-row flex-wrap">
 
         <div id="contactForm"> <!--have to provide boxes-->
-            <form action>
+            <form>
                 <label for="fname">Name*</label><br>
                 <div class="allignment flex-row flex-one">
                     <input type="text" id="fname" name="fname" placeholder="first name">
@@ -69,7 +70,7 @@
                     </div>
                 </div>
                 <label for="message">Message*</label>
-                <textarea id="message" name="message" rows="10" column="90"></textarea>
+                <textarea id="message" name="message"></textarea>
             </form>
         </div>
         <div id="contactHeader">
@@ -83,7 +84,8 @@
         </div>
     </section>
     <section>
-        <div><div><iframe width="100%" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+        <h2 class="hidden">Map</h2>
+        <div><iframe width="100%" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
     </section>
     <footer>
         <hr>

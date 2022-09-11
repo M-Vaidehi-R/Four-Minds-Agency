@@ -1,20 +1,27 @@
-# STARTUP AGENCY Design & Coding
+# FOUR MINDS
 
-Students in groups of 4 are responsible for designing a professional agency site(mobile, tablet and desktop) with an original logo & tagline. The groups will also design and animate a video to promote the new startup advertising agency.
+Get spotted with us.
 
-The startup agency is owned by each group member, so every member has a say in the look and feel of the projects. Stay consistent in the look of the logo through the website and video.
+Your dream advertising.
 
-Make all the required elements cohesive in the brand experience. You will write your own content for each page as well. Come up with headings and body copy that match the tone of your newly created agency's brand.
+Stand out from the crowd.
 
-## Assignment Requirements
+We are Four Minds. Fully-integrated marketing and advertising agency that provides a complete set of services.
 
-  1. Logo Design and Tagline
-  2. Website Design
-  3. HTML, CSS, JavaScript
-  4. Motion Design
+## Services Offered
+
+  1. We will surely provide customer satisfaction
+  2. Eliminate missing gaps in advertising reach
+  3. Increase revenue opportunities
+  4. Increase brand awareness via multiple avenues
+
+## Moodboard
+![Moodboard](assets/mood-board.jpg "Moodboard")
+
+## Video Sneak-Peak
+![Video](video/render-result.mp4 "Video Advertising")
 
 ## Group Notes
-
 https://drive.google.com/drive/folders/1EIyfu1dH9cSGysGZGUMFOCRjjTxvELag
 
 ## Contributing

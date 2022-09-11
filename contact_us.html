@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
   <header>
     <section class="headerBox">
        <!--logo-->
@@ -36,51 +37,88 @@
     </section>
 
   </header>
-
-        <section class="contact">
-            <div id="contactHeader">
-                <div>
-                    <h2>Call Us <br> 226-504-4703</h2>
-                    <p>505 Dundas St <br> London, Ontario</p>
-                    <img src="images/facebook.svg" alt="facebook">  &nbsp; &nbsp; &nbsp;
-                    <img src="images/instagram.svg" alt="instagram"> &nbsp; &nbsp; &nbsp;
-                    <img src="images/whatsapp.svg" alt="whatsapp"> &nbsp; &nbsp; &nbsp;
+=======
+    <header>
+        <section class="headerBox">
+        <!--logo-->
+        <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_FourMinds.png" width="200" alt="logo"></a>
                 </div>
-            </div>
-            <!--social media Images  fb, Insta, whatsapp-->
+                <!--menu icon-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our_projects.html">Projects</a></li>
+                    <li><a href="new_projects.html">New Projects</a></li>
+                    <li><a href="contact_us.html" class="active">Contact Us</a> </li>
+                </ul>
+>>>>>>> dev.dkst.contactusmob
 
-            <div id="contactForm"> <!--have to provide boxes-->
-                <form action>
-                    <label for="fname">Name*</label><br>
+                <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                </div>
+            </nav>
+        </section>
+
+    </header>
+    <br><br>
+    <section class="allignment hero">
+        <picture>
+            <source srcset="images/aboutUs_desktop.png">
+            <img src="images/aboutUs_desktop.png" alt="Banner">
+        </picture>
+        <div class="hero-overlay">
+            <h2 class="hero-title">What you think matters</h2> 
+            <p class="hero-sub-title">We like to hear from you! <br>
+            Contact us now and let's discuss how you want your business to strive <br> or let us know if you have an amazing idea! </p>
+        </div>
+    </section>
+
+    <section class="contact allignment flex-row flex-wrap">
+        
+        <div id="contactForm"> <!--have to provide boxes-->
+            <form action>
+                <label for="fname">Name*</label><br>
+                <div class="allignment flex-row flex-one">
                     <input type="text" id="fname" name="fname" placeholder="first name">
-                    <input type="text" id="lname" name="fname" placeholder="last name" class="goRight"><br>
-
+                    <input type="text" id="lname" name="fname" placeholder="last name"><br>
+                </div>
+                <div class="allignment flex-row flex-one">
                     <div class="formSecondInput">
                         <label for="name">Company*</label>
-                        <br>
                         <input type="text" id="name" name="name" placeholder="4MINDS">
                     </div>
-                    <div class="formSecondInput goRight">
+                    <div class="formSecondInput">
                         <label for="email" id="emailLabel">Email*</label><br>
                         <input type="text" id="email" name="email" placeholder="4minds@gmail.com">
                     </div>
-
-                    <br>
-                    <label for="message">Message*</label>
-                    <br>
-                    <textarea id="message" name="message" rows="10" column="90"></textarea>
-                </form>
+                </div>
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="10" column="90"></textarea>
+            </form>
+        </div>
+        <div id="contactHeader">
+            <div>
+                <h2>Call Us <br> 226-504-4703</h2>
+                <p>505 Dundas St <br> London, Ontario</p>
+                <img src="images/facebook.svg" alt="facebook">  &nbsp; &nbsp; &nbsp;
+                <img src="images/instagram.svg" alt="instagram"> &nbsp; &nbsp; &nbsp;
+                <img src="images/whatsapp.svg" alt="whatsapp"> &nbsp; &nbsp; &nbsp;
             </div>
-        </section>
-        <section>
-            <div><div><iframe width="100%" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-        </section>
-        <footer>
-            <hr>
-            <div class="footer-bottom">
-              All Rights Reserved. Copyright 2022
-            </div>
-        </footer>
+        </div>
+    </section>
+    <section>
+        <div><div><iframe width="100%" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+    </section>
+    <footer>
+        <hr>
+        <div class="footer-bottom">
+            All Rights Reserved. Copyright 2022
+        </div>
+    </footer>
     <script src="js/main.js"></script>
     </body>
     </html>

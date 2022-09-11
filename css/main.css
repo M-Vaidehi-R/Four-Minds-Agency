@@ -28,6 +28,10 @@ a.showMore {
   flex-wrap: wrap-reverse !important;
 }
 
+.flex-one > input, .flex-one > div{
+  flex: 1;
+}
+
 /* GENERAL HERO */
 .hero{
   line-height: 1.8;
@@ -36,7 +40,7 @@ a.showMore {
 }
 .hero-overlay{
   position: absolute;
-  margin-top: 10%;
+  margin-top: 17%;
   font-size: 2em;
   background: rgba(255,255,255,.3);
   padding: 50px;
@@ -230,6 +234,14 @@ h3{
   margin: 30px 0;
 }
 
+.projects-container img{
+  width: 100%;
+}
+
+.projects{
+  padding: 20px;
+}
+
 /* ABOUT PAGE */
 .members > div{
   margin: 50px 0;
@@ -251,7 +263,12 @@ h3{
 /* CONTACT US PAGE */
 
 .contact{
-  margin-top: 60px;
+  margin: 60px 0;
+  flex-wrap: wrap;
+}
+
+.contact > div{
+  flex: 1;
 }
 .contact h2{
   font-size: 40px;
@@ -267,34 +284,16 @@ h3{
   width: 30px;
   height: 30px;
 }
-#contactHeader{
-  display: inline-block;
-  float: right;
-  width: 35%;
-  height: 400px;
-  padding-top: 65px;
-  position: relative;
-}
-#contactHeader div{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#contactForm{
-  display: inline-block;
-  width: 64%;
-  position: relative;
+#contactHeader, #contactForm{
+  padding: 30px;
 }
 #contactForm form{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+  width: 100%;
 }
 #contactForm input{
-  margin: 10px;
-  padding: 5px;
-  width: 250px;
+  margin: 10px 10px 10px 0px;
+  padding: 15px;
+  width: 90%;
 }
 #contactForm label{
   font-weight: bold;
@@ -302,18 +301,12 @@ h3{
 }
 
 #message{
-  width: 100%;
+  width: 98%;
   outline: none;
   resize: none;
-  margin: 10px;
+  margin: 10px 0;
 }
-.formSecondInput{
-  display: inline-block;
-}
-.goRight{
-  position: absolute;
-  right: 0;
-}
+
 .mapouter{
   width: 100%;
 }
@@ -362,6 +355,7 @@ nav {
 }
 .burger{
   display: block;
+  cursor: pointer;
 }
 
 .nav-active{
@@ -512,6 +506,7 @@ nav{
   width:50%;
   transform: translateX(120%);
   transition: transform 0.1s ease-in ;
+  z-index: 999;
 }
 
 .nav-links a{
@@ -624,6 +619,7 @@ nav {
   transition: none;
   transform: none;
   flex: 2;
+  z-index: 999;
 }
 
 .nav-links li {

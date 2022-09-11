@@ -20,7 +20,7 @@ We are Four Minds. Fully-integrated marketing and advertising agency that provid
 ![Moodboard](images/mood-board.jpg "Moodboard")
 
 ## Video Sneak-Peak
-![Watch the video](https://github.com/M-Vaidehi-R/Four-Minds-Agency/blob/main/video/render-result.mp4 "Video Advertising")
+[![Watch the video](images/thumbnail.png)](https://www.youtube.com/watch?v=u3j1VPmGD9U)
 
 ## Group Notes
 https://drive.google.com/drive/folders/1EIyfu1dH9cSGysGZGUMFOCRjjTxvELag

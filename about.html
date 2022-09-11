@@ -23,11 +23,11 @@
                 </div> 
                 <!--menu icon-->
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="newProjects.html">New Project</a></li>
-                    <li><a href="contactUs.html">Contact Us</a> </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="new_projects.html">New Projects</a></li>
+                    <li><a href="contact_us.html">Contact Us</a> </li>
                 </ul>
             
                 <div class="burger">
@@ -42,50 +42,70 @@
    
 
     <section class="allignment">
-        <h2>Our Team</h2> </section>
+        <h2 class="overlay">Our Team</h2>
+        <a id="btn-video" class="video-btn">Together We Create Magic</a>
+       
+        <div id="overlay-panel">
+          <span id="overlay-close-btn">X</span>
+          <video src="video/ad-resultV2.mp4" alt="team video" controls></video>
+      </div>
+    </section>
+    <section class="members">
         <!--about each member-->
-        <div class="memberOne allignment">
-            <!--<img src="images/" alt="team member 1">-->
+        <div class="allignment flex-row">
             <picture>
                 <source media="(min-width:770px)" srcset="images/dianne_team_desktop.png">
                 <source media="(min-width:480px)" srcset="images/dianne_team_tablet.png">
                 <img src="images/dianne_team_mobile.png" alt="Banner" width="400">
             </picture>
-        <h3>Dianne Karla Trabuco Ojeda</h3>
-        <p>Designer</p>
-        <button class="showMore-team" type="button">Show more</button>
+            <div>
+                <h3>Dianne Karla Trabuco-Ojeda</h3>
+                <p>Graphics and Video Designer / Web Developer</p>
+                <p>I enjoy creating graphics, assets and design while also working on how it can be applied on web developement. This allows me to work on design and understand the technical feasibility and possible improvement of my designs. </p>
+                <br>
+                <a href="Projects.html#project-1" class="showMore" type="button">View Projects</a>
+            </div>
         </div>
 
-        <div class="two-items yellowBckgrd">
-            <!--<img src="images/" alt="team member 2">-->
-            <h3>Mamatha Vaidehi Rameshi </h3>
-        <p>Web Developer</p>
-        <button class="showMore-team" type="button">Show more</button>
+        <div class="allignment flex-row yellowBckgrd flex-wrap-reverse">
+            <div>
+                <h3>Mamatha Vaidehi Rameshi </h3>
+                <p>Designer / Web Developer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a excepturi tempore soluta fuga possimus? Cum consequuntur id modi provident porro excepturi alias, possimus esse dolorum tempore dicta vel deleniti!</p>
+                <br>
+                <a href="Projects.html" class="showMore" type="button">View Projects</a>
+            </div>
+            
             <picture>
                 <source media="(min-width:770px)" srcset="images/mamatha_team_desktop.png">
                 <source media="(min-width:480px)" srcset="images/mamatha_team_tablet.png">
                 <img src="images/mamatha_team_mobile.png" alt="Banner" width="400">
             </picture>
-        
         </div>
 
-    <div class="two-items">
-        <!--<img src="images/" alt="team member 3">-->
+    <div class="allignment flex-row">
         <picture class="allignment">
             <source media="(min-width:770px)" srcset="images/mariia_team_desktop.png">
             <source media="(min-width:480px)" srcset="images/mariia_team_tablet.png">
             <img src="images/mariia_team_mobile.png" alt="Banner" width="400">
         </picture>
-    <h3>Mariia Schevchenko</h3>
-    <p>UX/UI Designer and Web Developer</p>
-    <button class="showMore-team" type="button">Show more</button>
+        <div>
+            <h3>Mariia Schevchenko</h3>
+            <p>UX/UI Designer / Web Developer</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a excepturi tempore soluta fuga possimus? Cum consequuntur id modi provident porro excepturi alias, possimus esse dolorum tempore dicta vel deleniti!</p>
+            <br>
+            <a href="Projects.html#project-3" class="showMore" type="button">View Projects</a>
+        </div>
     </div>
 
-    <div class="two-items yellowBckgrd">
-        <!--<img src="images/" alt="team member 4">-->
-        <h3>Tallyta Triolo</h3>
-        <p>Designer and Web Developer</p>
-        <button class="showMore-team" type="button">Show more</button>
+    <div class="allignment flex-row yellowBckgrd flex-wrap-reverse">
+        <div>
+            <h3>Tallyta Triolo</h3>
+            <p>Graphics Designer / Web Developer</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a excepturi tempore soluta fuga possimus? Cum consequuntur id modi provident porro excepturi alias, possimus esse dolorum tempore dicta vel deleniti!</p>
+            <br>
+            <a href="Projects.html#project-2" class="showMore" type="button">View Projects</a>
+        </div>
         <picture class="allignment">
             <source media="(min-width:770px)" srcset="images/tallyta_team_desktop.png">
             <source media="(min-width:480px)" srcset="images/tallyta_team_tablet.png">
@@ -94,23 +114,26 @@
 
     </div>
 
-    <footer class="two-items">
+    <footer>
 
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="390" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:650px;}</style><a href="https://www.embedgooglemap.net">google maps in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:390px;}</style></div></div>
-
-        <!--more questions and map-->
-        <div class="contactUs">
-        <h2>Do you have more Questions? <br> Contact Us!</h2>
-        <p>4minds@gmail.com <br><br> 505 Dundas st, London, Ontario</p>
+        <div class="footer-upper two-items">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:650px;}</style><a href="https://www.embedgooglemap.net">google maps in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:500px;}</style></div></div>
+          <!--more questions and map-->
+          <div class="contactUs">
+          <h2>Do you have more Questions? <br> Contact Us!</h2>
+          <p>4minds@gmail.com <br><br> 505 Dundas st, London, Ontario</p>
             <br>
             <br>
-            <img src="images/facebook.svg" alt="facebook">  &nbsp; &nbsp; &nbsp;
-            <img src="images/instagram.svg" alt="instagram"> &nbsp; &nbsp; &nbsp;
-            <img src="images/whatsapp.svg" alt="whatsapp"> &nbsp; &nbsp; &nbsp;
-        </div> 
-
-        
-    </footer>
+              <img src="images/facebook.svg" alt="facebook">  &nbsp; &nbsp; &nbsp;
+              <img src="images/instagram.svg" alt="instagram"> &nbsp; &nbsp; &nbsp;
+              <img src="images/whatsapp.svg" alt="whatsapp"> &nbsp; &nbsp; &nbsp;
+          </div> 
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          All Rights Reserved. Copyright 2022
+        </div>
+      </footer>
     <!-- JS always at the bottom -->
     <script src="js/main.js"></script>
 </body>

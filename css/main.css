@@ -11,6 +11,23 @@ a {
   text-decoration: none;
 }
 
+
+a.showMore {
+  background: #2b4772;
+  color: white;
+  padding: 20px 40px;
+  border: 3px solid gray;
+}
+
+.flex-row{
+  flex-direction: row !important;
+  justify-content: space-evenly;
+}
+
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse !important;
+}
+
 /* GENERAL HERO */
 .hero{
   line-height: 1.8;
@@ -66,7 +83,6 @@ a {
 }
 
 .blueContainer img {
-  /* margin-left: 1em; */
   margin-left: 1em;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -79,14 +95,6 @@ a {
 }
 
 .yellowBckgrd {
-  width: 1920px;
-  height: 500px;
-  background-color: #f7BD48;
-}
-
-.yellowBckgrd {
-  width: 1920px;
-  height: 500px;
   background-color: #f7BD48;
 }
 
@@ -190,6 +198,16 @@ footer{
   margin: 2em 0;
 }
 
+.footer-upper{
+  margin:20px 0px 40px;
+}
+
+.footer-bottom{
+  margin:20px 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
 h3{
   font-size: 25px;
 }
@@ -210,6 +228,94 @@ h3{
 /* PROJECTS PAGE */
 .projects-container{
   margin: 30px 0;
+}
+
+/* ABOUT PAGE */
+.members > div{
+  margin: 50px 0;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.members picture {
+  flex: 1;
+  text-align: center;
+}
+
+.members > div > div{
+  padding: 30px;
+  line-height: 1.8;
+  flex: 2;
+}
+
+/* CONTACT US PAGE */
+
+.contact{
+  margin-top: 60px;
+}
+.contact h2{
+  font-size: 40px;
+  color: black;
+  width: 300px;
+}
+.contact p{
+  margin: 25px 0;
+  font-size: 14px;
+}
+.contact img{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+#contactHeader{
+  display: inline-block;
+  float: right;
+  width: 35%;
+  height: 400px;
+  padding-top: 65px;
+  position: relative;
+}
+#contactHeader div{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#contactForm{
+  display: inline-block;
+  width: 64%;
+  position: relative;
+}
+#contactForm form{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+#contactForm input{
+  margin: 10px;
+  padding: 5px;
+  width: 250px;
+}
+#contactForm label{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#message{
+  width: 100%;
+  outline: none;
+  resize: none;
+  margin: 10px;
+}
+.formSecondInput{
+  display: inline-block;
+}
+.goRight{
+  position: absolute;
+  right: 0;
+}
+.mapouter{
+  width: 100%;
 }
 
 
@@ -445,17 +551,13 @@ nav{
 
   p {
     font-size: 24px;
-    padding: .5em;
+    padding: .5em 0;
   }
 
   .wrap-flex{
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-  }
-
-  footer{
-    margin-left: 16em;
   }
 
   form {
@@ -495,6 +597,7 @@ nav{
 
 .blueContainer{
   background-color: #2B4772;
+  justify-content: space-evenly;
   padding: 1em;
 }
 

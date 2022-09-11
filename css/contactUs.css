@@ -19,7 +19,7 @@
     display: inline-block;
     float: right;
     width: 35%;
-    height: 500px;
+    height: 400px;
     padding-top: 65px;
     position: relative;
 }
@@ -31,7 +31,6 @@
 #contactForm{
     display: inline-block;
     width: 64%;
-    height:500px;
     position: relative;
 }
 #contactForm form{

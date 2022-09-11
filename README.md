@@ -1,4 +1,5 @@
 # FOUR MINDS
+## Together We Create Magic
 
 Get spotted with us.
 
@@ -16,7 +17,7 @@ We are Four Minds. Fully-integrated marketing and advertising agency that provid
   4. Increase brand awareness via multiple avenues
 
 ## Moodboard
-![Moodboard](assets/mood-board.jpg "Moodboard")
+![Moodboard](images/mood-board.jpg "Moodboard")
 
 ## Video Sneak-Peak
 ![Video](video/render-result.mp4 "Video Advertising")

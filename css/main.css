@@ -325,7 +325,7 @@ nav {
 }
 
 .nav-links {
-  display: relative;
+  position: relative;
   margin-right: -20px;
   height: 15em;
   margin-top:10em;
@@ -494,7 +494,7 @@ nav{
 }
 
 .nav-links {
-  display: relative;
+position: relative;
   right: 0px;
   height: 15em;
   margin-top:10em;

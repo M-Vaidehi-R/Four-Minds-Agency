@@ -14,104 +14,110 @@
 </head>
 
 <body>
-  <!-- Content goes here -->
-
   <h1 class="hidden">Home Page</h1>
 
   <header>
-  <section class="headerBox">
-     <!--logo-->
-     <nav>
-    <div class="logo">
-    <img class="logo" src="includes/logo_icon.png" width="48" height="48" alt="logo">
-    </div> 
-    <!--menu icon
-     <img class="menu" src="images/menu.svg" alt="menu">-->
-     <ul class="nav-links">
-      <li>
-          <a href="index.html" class="active">Home</a>
+    <section class="headerBox">
+       <!--logo-->
+       <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo_FourMinds.png" width="200" alt="logo"></a>
+      </div> 
+      <!--menu icon
+       <img class="menu" src="images/menu.svg" alt="menu">-->
+       <ul class="nav-links">
+        <li>
+            <a href="index.html" class="active">Home</a>
+        </li>
+  
+        <li>
+            <a href="about.html">About</a>
+        </li>
+  
+        <li>
+            <a href="newProjects.html">New Project</a>
+        </li>
+  
+        <li>
+            <a href="Projects.html">Projects</a>
+        </li>
+  
+        <li>
+          <a href="contactUs.html">Contact Us</a>
       </li>
-
-      <li>
-          <a href="about.html">About</a>
-      </li>
-
-      <li>
-          <a href="newProjects.html">New Project</a>
-      </li>
-
-      <li>
-          <a href="Projects.html">Projects</a>
-      </li>
-
-      <li>
-        <a href="contactUs.html">Contact Us</a>
-    </li>
-  </ul>
-     
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-
-  </nav>
-  </section>
-
-  </header>
+    </ul>
+       
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  
+    </nav>
+    </section>
+    </header>
+    
   <div class="sections">
   <!--video and tagline-->
-  <section class="allignment"> <br><br><br><br><br><br>
+  <section class="allignment">
     <h2 class="overlay">Together We Create Magic</h2>
-   <video src="video" class="videoContainer" alt="team video">
-
-  </section>
-
-  <section class="allignment">
-    <h2>About Us</h2>
-    <p>4 Minds =  4 Women, 
-      who decided to show you that your brand is an icon. We create projects that are memorable. 
-      We know what others are doing, and therefore we create a fundamentally new. We know how to work for results, and we provide services to solve a variety of tasks: creating an image, increasing sales and other important needs of your business.</p>
-  </section>
-
-  <section class="allignment">
-    <p>It will entertain you. <br>
-    It will challenge you. <br>
-  It will make you feel something.</p> <br>
-  <button type="button">Take a look at our projects</button>
-
-  </section>
-
-  <section class="greyContainer allignment">
-    &nbsp; <img src="images/dianne-02.png" width="240" height="359" alt="Dianne"> </a>&nbsp; &nbsp;
-    <img src="images/mamatha-01.png" width="240" height="359" alt="Mamatha"></a>  &nbsp; &nbsp;
-    <img src="images/maria-03.png" width="240" height="359" alt="Mariia"></a>   &nbsp; &nbsp;
-    <img src="images/tally-03.png" width="240" height="359" alt="Tally"></a>
-    <div class="wrap-flex">
-      &nbsp; &nbsp;
-    <br>
-    </div>
-    <button type="button">Click to know more</button>
-  </section>
+    <a id="btn-video" class="video-btn">Discover Four Minds</a>
+   
+    <div id="overlay-panel">
+      <span id="overlay-close-btn">X</span>
+      <video src="video/ad-resultV2.mp4" alt="team video" controls></video>
   </div>
 
-  <footer class="allignment wrap-flex">
+  </section>
+
+  <section class="allignment">
+    <picture>
+      <source media="(min-width:770px)" srcset="images/aboutUs_desktop.png">
+      <source media="(min-width:480px)" srcset="images/aboutUs_tablet.png">
+      <img src="images/aboutUs_mobile.png" alt="Banner">
+  </picture>
+    <h2 class="about-title">About Us</h2>
+    <p class="about-text">4 Minds =  4 Women,<br>
+      who decided to show you that your brand is an icon. <br>We create projects that are memorable. <br>
+      We know what others are doing, and therefore we create a fundamentally new. <br>We know how to work for results, and we provide services to solve a variety of tasks: <br>creating an image, increasing sales and other important needs of your business.</p>
+  </section>
+
+  <section class="yellowContainer allignment">
+    <p class="projects-text">It will entertain you. <br>
+    It will challenge you. <br>
+  It will make you feel something.</p> <br>
+  <a href="Projects.html"><button class="btnProjects">Take a look at our projects</button></a>
+
+  </section>
+
+    <div class="blueContainer wrap-flex">
+    <img src="images/dianne_homePage_desktop.png" width="240" height="359" alt="Dianne"> 
+    <img src="images/mamatha_homePage_desktop.png" width="240" height="359" alt="Mamatha"> 
+    <img src="images/mariia_homePage_desktop.png" width="240" height="359" alt="Mariia">  
+    <img src="images/tallyta_homePage_desktop.png" width="240" height="359" alt="Tally"> 
+  </div>
+  <section class="allignment">
+    <a href="about.html"><button class="btnTeam" type="button">Click to know more</button></a></section>
+
+  <footer class="two-items">
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="390" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:650px;}</style><a href="https://www.embedgooglemap.net">google maps in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:390px;}</style></div></div>
+
     <!--more questions and map-->
-    <div>
+    <div class="contactUs">
     <h2>Do you have more Questions? <br> Contact Us!</h2>
     <p>4minds@gmail.com <br><br> 505 Dundas st, London, Ontario</p>
-
-    </div>
-   
-    <div class="two-items">
+      <br>
+      <br>
         <img src="images/facebook.svg" alt="facebook">  &nbsp; &nbsp; &nbsp;
         <img src="images/instagram.svg" alt="instagram"> &nbsp; &nbsp; &nbsp;
         <img src="images/whatsapp.svg" alt="whatsapp"> &nbsp; &nbsp; &nbsp;
-    </div> <br>
+    </div> 
 
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="390" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=505%20Dundas%20st%20London%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:390px;}</style><a href="https://www.embedgooglemap.net">google maps in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:390px;}</style></div></div>
+    
 </footer>
   <!-- JS always at the bottom -->
   <script src="js/main.js"></script>
+  </div>
 </body>
 </html>
